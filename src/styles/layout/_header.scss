@@ -57,7 +57,7 @@
   }
   &__item {}
   &__link {
-    color: var(--foreground);
+    color: var(--text-color);
     &:hover {
       background: var(--third-gradient);
       background-clip: text;
@@ -73,7 +73,7 @@
 
   .nav {
     padding-block: 4rem;
-    background-color: var(--background);
+    background-color: var(--body-color);
     &__list {
       flex-direction: column;
       row-gap: 2rem;
