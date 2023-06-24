@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-poppins);
+  font-size: var(--fz-base);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
