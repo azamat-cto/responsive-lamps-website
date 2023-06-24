@@ -32,16 +32,24 @@ const Header = (props) => {
             <nav className="nav">
               <ul className="nav__list">
                 <li className="nav__item">
-                  <a className="nav__link" href="#home">Home</a>
+                  <a className="nav__link" href="#home">
+                    Home
+                  </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#popular">Popular</a>
+                  <a className="nav__link" href="#popular">
+                    Popular
+                  </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#choose">Choose</a>
+                  <a className="nav__link" href="#choose">
+                    Choose
+                  </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#products">Products</a>
+                  <a className="nav__link" href="#products">
+                    Products
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -64,16 +72,40 @@ const Header = (props) => {
             <nav className="nav">
               <ul className="nav__list">
                 <li className="nav__item">
-                  <a className="nav__link" href="#home" onClick={handleDrawerClose}>Home</a>
+                  <a
+                    className="nav__link"
+                    href="#home"
+                    onClick={handleDrawerClose}
+                  >
+                    Home
+                  </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#popular" onClick={handleDrawerClose}>Popular</a>
+                  <a
+                    className="nav__link"
+                    href="#popular"
+                    onClick={handleDrawerClose}
+                  >
+                    Popular
+                  </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#choose" onClick={handleDrawerClose}>Choose</a>
+                  <a
+                    className="nav__link"
+                    href="#choose"
+                    onClick={handleDrawerClose}
+                  >
+                    Choose
+                  </a>
                 </li>
                 <li className="nav__item">
-                  <a className="nav__link" href="#products" onClick={handleDrawerClose}>Products</a>
+                  <a
+                    className="nav__link"
+                    href="#products"
+                    onClick={handleDrawerClose}
+                  >
+                    Products
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -91,7 +123,6 @@ const Header = (props) => {
               <i className="ri-menu-line"></i>
             </button>
           </div>
-
         </div>
       </Container>
     </header>

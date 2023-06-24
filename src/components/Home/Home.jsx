@@ -10,16 +10,16 @@ const Home = () => {
         <div className="home__grid grid">
           <div className="home__content grid">
             <div className="home__data">
-              <h3 className="home__subtitle">
-                The best light bulbs
-              </h3>
+              <h3 className="home__subtitle">The best light bulbs</h3>
               <h1 className="home__title">
                 Unique Light <br />
                 For Your Home
               </h1>
 
               <div className="home__btns">
-                <a className="btn-contained" href="#">Discover Now</a>
+                <a className="btn-contained" href="#">
+                  Discover Now
+                </a>
                 <a className="btn-icon" href="#">
                   <i className="ri-play-circle-line"></i> Watch Video
                 </a>

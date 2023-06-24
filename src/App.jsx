@@ -10,7 +10,7 @@ function App() {
   }
 
   const handleDrawerClose = () => {
-    setOpen(false);
+    setOpen(false)
   }
 
   return (
