@@ -3,7 +3,7 @@ import HomeLamp from '../../assets/images/home-lamp.png'
 
 const Home = () => {
   return (
-    <section className="home section">
+    <section className="home section" id="home">
       <div className="home__bg"></div>
 
       <Container>
