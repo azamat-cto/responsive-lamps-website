@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  line-height: initial;
 }
 
 *, *::after, *::before {
@@ -11,9 +12,9 @@ html {
 
 body {
   font-family: var(--font-poppins);
-  font-size: var(--fz-base);
-  background-color: var(--background);
-  color: var(--foreground);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 h1,
@@ -22,7 +23,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  margin: 0;
+  color: var(--title-color);
   font-family: var(--font-montserrat);
   font-weight: 600;
 }
@@ -54,3 +56,7 @@ button {
   background-color: transparent;
 }
 
+::selection {
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
