@@ -1,10 +1,25 @@
+import { useEffect, useState } from 'react'
 import { Container, Drawer } from '@mui/material'
 
 const Header = (props) => {
   const { open, handleDrawerClose, handleDrawerOpen } = props
+  const [scroll, setScroll] = useState(false)
+
+  const listenScrollEvent = (e) => {
+    if (window.scrollY >= 50) {
+      setScroll(true)
+    } else {
+      setScroll(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent)
+    return () => window.removeEventListener('scroll', listenScrollEvent)
+  }, [scroll])
 
   return (
-    <header className="header">
+    <header className={`${scroll ? 'header scroll-header' : 'header'}`}>
       <Container>
         <div className="header__toolbar">
           <div className="logo">
