@@ -5,10 +5,11 @@ html {
 
 *, *::after, *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   font-family: var(--font-poppins);
   font-size: var(--fz-base);
   background-color: var(--background);
@@ -28,10 +29,7 @@ h6 {
 
 ol,
 ul {
-  list-style-type: none;
-  margin-block-end: 0;
-  margin-block-start: 0;
-  padding-inline-start: 0;
+  list-style: none;
 }
 
 a {
@@ -48,7 +46,6 @@ input,
 button {
   font-family: inherit;
   font-size: inherit;
-  padding: 0;
   border: 0;
 }
 
@@ -56,3 +53,4 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
+
