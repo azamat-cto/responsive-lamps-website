@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Header } from './components/Header'
 import { Home } from './components/Home'
 import { Popular } from './components/Popular'
+import { Choose } from './components/Choose'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -24,6 +25,7 @@ function App() {
       <main className="main">
         <Home />
         <Popular />
+        <Choose />
       </main>
     </div>
   )
