@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import { Container } from '@mui/material'
 import ModernLamp from '../../assets/images/modern-lamp.png'
 import IndustrialLamp from '../../assets/images/industrial-lamp.png'
@@ -10,9 +9,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
 
 const Popular = () => {
-  const navigationPrevRef = useRef(null)
-  const navigationNextRef = useRef(null)
-
   return (
     <section className="popular section" id="popular">
       <Container>
@@ -29,19 +25,10 @@ const Popular = () => {
             <Swiper
               slidesPerView="1"
               navigation={{
-                prevEl: navigationPrevRef.current,
-                nextEl: navigationNextRef.current
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next'
               }}
               modules={[Navigation]}
-              onSwiper={(swiper) => {
-                setTimeout(() => {
-                  swiper.params.navigation.prevEl = navigationPrevRef.current
-                  swiper.params.navigation.nextEl = navigationNextRef.current
-                  swiper.navigation.destroy()
-                  swiper.navigation.init()
-                  swiper.navigation.update()
-                })
-              }}
             >
               <SwiperSlide>
                 <article className="popular__card">
@@ -144,10 +131,10 @@ const Popular = () => {
               </SwiperSlide>
             </Swiper>
             <div>
-              <button className="swiper-button-prev" ref={navigationPrevRef}>
+              <button className="swiper-button-prev" >
                 <i className="ri-arrow-left-s-line"></i>
               </button>
-              <button className="swiper-button-next" ref={navigationNextRef}>
+              <button className="swiper-button-next" >
                 <i className="ri-arrow-right-s-line"></i>
               </button>
             </div>
