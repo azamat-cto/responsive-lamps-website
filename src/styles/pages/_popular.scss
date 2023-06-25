@@ -1,0 +1,102 @@
+.popular {
+  &__grid {
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__desc {
+  }
+
+  &__content {
+    padding-block: 2.5rem 5rem;
+    position: relative;
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      content: '';
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: initial;
+      bottom: 0.75rem;
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--container-color);
+      padding: 4px;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      color: var(--first-color);
+      box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.1);
+    }
+
+    .swiper-button-prev {
+      left: calc(50% - 3rem);
+    }
+
+    .swiper-button-next {
+      right: calc(50% - 3rem);
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 200px;
+    height: 322px;
+    background-color: var(--container-color);
+    border-radius: 9rem 9rem 0 0;
+    padding: 0.75rem 0.75rem 1rem;
+    margin: 0 auto;
+    transition: box-shadow 0.4s;
+    &:hover {
+      box-shadow: 0 12px 16px hsla(0, 0%, 0%, 0.1);
+    }
+  }
+
+  &__blob {
+    background-color: var(--body-color);
+    height: 200px;
+    border-radius: 8rem 8rem 0 0;
+    margin-bottom: 0.75rem;
+  }
+
+  &__img {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  &__name {
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.25rem;
+  }
+
+  &__subtitle {
+    font-family: var(--font-montserrat);
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__price {
+    font-size: var(--h1-font-size);
+    span {
+      color: var(--first-color-alt);
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    padding: 0.25rem;
+    background: var(--third-gradient);
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: var(--white-color);
+    box-shadow: 0 2px 8px hsla(15, 68%, 32%, 0.4);
+    position: absolute;
+    right: 0.75rem;
+    bottom: 1rem;
+  }
+}
