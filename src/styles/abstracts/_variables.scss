@@ -1,5 +1,6 @@
 :root {
   --first-color: hsl(15, 60%, 52%);
+  --first-color-alt: hsl(15, 68%, 40%);
   --body-color: hsl(0, 0%, 96%);
   --text-color: hsl(0, 0%, 50%);
   --title-color: hsl(0, 0%, 12%);
@@ -20,6 +21,7 @@
     hsl(20, 62%, 60%) 100%
   );
   --bg-black: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 100%);
 
   --font-poppins: 'Poppins', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
