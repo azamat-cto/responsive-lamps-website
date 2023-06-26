@@ -57,7 +57,7 @@ const Choose = () => {
               <img className="choose__img" src={ChooseLamp} alt="Choose lamp" />
               <h1 className="choose__blob-title">LIGHT</h1>
             </div>
-            <div className="choose__shadow"></div>
+            <div className="img-shadow"></div>
           </div>
 
           <div className="choose__content">

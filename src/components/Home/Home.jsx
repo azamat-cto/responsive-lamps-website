@@ -61,7 +61,7 @@ const Home = () => {
               <img className="home__img" src={HomeLamp} alt="Home lamp image" />
               <h1 className="home__blob-title">LIGHT</h1>
             </div>
-            <div className="home__shadow"></div>
+            <div className="img-shadow"></div>
           </div>
         </div>
       </Container>
