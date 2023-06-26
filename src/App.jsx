@@ -3,6 +3,7 @@ import { Header } from './components/Header'
 import { Home } from './components/Home'
 import { Popular } from './components/Popular'
 import { Choose } from './components/Choose'
+import { Features } from './components/Features'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -26,6 +27,7 @@ function App() {
         <Home />
         <Popular />
         <Choose />
+        <Features />
       </main>
     </div>
   )
